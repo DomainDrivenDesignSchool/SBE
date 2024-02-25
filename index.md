@@ -24,12 +24,14 @@ In the world of software development, effective communication and collaboration 
 
 This is where Specification by Example (SBE) comes into play. 
 
-SBE is a collaborative approach that aims to bridge the gap between stakeholders and development teams by using concrete examples to define and validate requirements. In this article, we will explore the concept of Specification by Example and its benefits in modern software development.
+> SBE is a collaborative approach that aims to bridge the gap between stakeholders and development teams by using concrete examples to define and validate requirements. In this article, we will explore the concept of Specification by Example and its benefits in modern software development.
 
 
 Specification by Example, also known as "Example-Driven Development" or "Acceptance Test-Driven Development," is an agile technique that emphasizes the use of concrete examples to specify software requirements. It shifts the focus from traditional textual requirements documents to executable examples that serve as living documentation and acceptance criteria for the software.
+![](/assets/images/sbe-wrokshop.jpg)
+***
 
-# Specification by Example by Gojko Adzic
+# **Specification by Example** book by Gojko Adzic
 
 ![Specification by Example by Gojko Adzic!](https://media.licdn.com/dms/image/D4E12AQHCtZS3YuLqIA/article-cover_image-shrink_720_1280/0/1663942427050?e=1714003200&v=beta&t=jjnVFoQ8sP26Y9k5j7_TrU14cRPguUu2sSWBu8rlRHo)
 
@@ -54,7 +56,7 @@ These process patterns, as outlined in the "Specification by Example" book, prov
 The process typically involves collaboration between stakeholders, business analysts, developers, testers, and other project members. They work together to identify, define, and refine examples that illustrate the desired behavior of the software from various perspectives.
 
 # Key Process of **Specification by Example**
-![Key Process!](https://lh6.googleusercontent.com/YxPB9CE-PI2xxwQ-nDF7PQp3YWlw-I7obnIACgogJfU8L8m7_94_N7m2MP6kT-J7gfPUPEbIW7-j4JJDvu_ZLtxXq4uY4JvqUziy7lutMPTBmM8jfkkGbainbgbk08j358rlKbyAZkh34307Xw=s0)
+![Key Process!](/assets/images/sbe-key-processes.jpg)
 
 
 - **Business Goal**: The process starts with identifying and aligning the business goals or objectives that the software system aims to achieve. It is crucial to have a clear understanding of the desired outcomes and the value the system should provide to the business or end users.
@@ -72,23 +74,38 @@ The process typically involves collaboration between stakeholders, business anal
 These key process patterns, as outlined in the "Specification by Example" book, provide a structured approach to capturing, validating, and documenting the desired behavior of the software system. They foster collaboration, ensure a shared understanding, and help deliver software that meets the intended business goals and user needs.
 
 
-# Example 
+# Let's run an Example of [Key Process of **Specification by Example**](#key-process-of-specification-by-example)
 
-- **Business Goal**: Imagine a business goal for a social media platform is to increase user engagement by improving the commenting feature, allowing users to reply to comments.
+- **Business Goal**: Imagine a business goal for a ***social media platform*** is to increase 20% user engagement by improving the commenting feature, allowing users to reply to comments.
 
+![](/assets/images/business-goal.jpg)
 - **Scope**: The scope would involve specifying that the commenting feature enhancements should apply to posts in public groups but exclude private groups and direct messages.
+
+![](/assets/images/scope.jpg)
 
 - **Key Examples**: A key example would be a scenario where a user replies to a comment on a post, and the original commenter receives a notification about the reply.
 
+![](/assets/images/key-examples.jpg)
+
 - **Specification with Examples**: During a collaborative session, the team discusses and refines the key example. They may identify additional details, such as the ability to include emojis in the comment replies and displaying the reply hierarchy in the user interface.
+![](/assets/images/Specification-with-Examples.jpg)
 
 - **Executable Specification**: The team creates an automated acceptance test that simulates the scenario described in the key example. The test checks if the notification is sent to the original commenter when a user replies to their comment.
 
+  ```csharp
+  [Theory]
+  public void when_a_user_replies_to_a_comment_the_original_commenter_should_be_notified()
+  {
+     // TODO
+  }
+  ```
+
+  ![](/assets/images/Specification-to-execution.jpg)
 - **Living Documentation**: The automated acceptance test becomes part of the living documentation. It is regularly executed, providing ongoing assurance that the desired behavior is maintained. The test serves as documentation and can be used to validate the system's behavior during development and regression testing.
 
 These examples illustrate how each process pattern can be applied in the context of developing and refining software requirements using Specification by Example practices.
 
-
+---
 # Collaborative Modelling
 Collaborative modeling is a practice that involves a group of stakeholders, typically representing different roles and perspectives, coming together to collaboratively create models that represent various aspects of a system or problem domain. It is a participatory approach that encourages active engagement, shared understanding, and collective decision-making.
 
