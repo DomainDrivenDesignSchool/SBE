@@ -74,7 +74,7 @@ The process typically involves collaboration between stakeholders, business anal
 These key process patterns, as outlined in the "Specification by Example" book, provide a structured approach to capturing, validating, and documenting the desired behavior of the software system. They foster collaboration, ensure a shared understanding, and help deliver software that meets the intended business goals and user needs.
 
 
-# Let's run an Example of [Key Process of **Specification by Example**](#key-process-of-specification-by-example)
+# Let's run an Example of [Key Process of Specification by Example](#key-process-of-specification-by-example)
 
 - **Business Goal**: Imagine a business goal for a ***social media platform*** is to increase 20% user engagement by improving the commenting feature, allowing users to reply to comments.
 
@@ -105,11 +105,18 @@ These key process patterns, as outlined in the "Specification by Example" book, 
 
 These examples illustrate how each process pattern can be applied in the context of developing and refining software requirements using Specification by Example practices.
 
+The power of **Specification by Example** as you can see, is based on merging the people, and taking the power of [collaborative modelling](#Collaborative-Modelling).
+
+> Merge the People
+> 
+> Split the Software
+
+
 ---
 # Collaborative Modelling
 Collaborative modeling is a practice that involves a group of stakeholders, typically representing different roles and perspectives, coming together to collaboratively create models that represent various aspects of a system or problem domain. It is a participatory approach that encourages active engagement, shared understanding, and collective decision-making.
 
-![Collaborative Modelling](https://www.wps.de/media/wps/xl/2005-wps-ddd-schimack--1.jpg)
+![Collaborative Modelling](/assets/images/collaborative-modelling.jpg)
 
 In collaborative modeling, stakeholders work together in real-time or through facilitated sessions to create visual representations, diagrams, or models that capture and communicate important concepts, relationships, and requirements of the system. The focus is on fostering collaboration, knowledge sharing, and eliciting diverse viewpoints to create a more comprehensive and accurate representation of the system.
 
